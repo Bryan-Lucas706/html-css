@@ -58,7 +58,6 @@ section > p {
 }
 
 .imagem {
-  padding: 50px 49vw 50px 5vw;
   box-shadow:inset 5px 5px 7px rgba(0, 0, 0, 0.426);
 }
 
@@ -80,6 +79,7 @@ section > p {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2px;
   color: white;
+  display: inline-block;
 }
 
 footer {
