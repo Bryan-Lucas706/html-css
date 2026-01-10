@@ -16,15 +16,15 @@
         text-align: center;
       }
 
-      .materia,
-      .media {
-        text-align: left;
-      }
-
       th,
       td {
         border: 1px solid black;
         padding: 5px;
+      }
+
+      .materia,
+      .media {
+        text-align: left;
       }
 
       thead,
@@ -34,9 +34,8 @@
         font-weight: bold;
       }
 
-      .num {
-        background-color: gray;
-        color: white;
+      .media > td {
+        text-align: center;
       }
     </style>
   </head>
@@ -80,9 +79,9 @@
           <td>0.0</td>
           <td>0.0</td>
         </tr>
-        <tr>
-          <th colspan="4" class="media" scope="row">Média de Exatas</th>
-          <td class="num">0.0</td>
+        <tr class="media">
+          <th colspan="4" scope="row">Média de Exatas</th>
+          <td>0.0</td>
         </tr>
         <tr>
           <th rowspan="2" scope="rowgroup">Humanas</th>
@@ -97,9 +96,9 @@
           <td>0.0</td>
           <td>0.0</td>
         </tr>
-        <tr>
-          <th colspan="4" class="media" scope="row">Media de Humanas</th>
-          <td class="num">0.0</td>
+        <tr class="media">
+          <th colspan="4" scope="row">Media de Humanas</th>
+          <td>0.0</td>
         </tr>
       </tbody>
     </table>
