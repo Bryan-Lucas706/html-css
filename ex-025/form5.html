@@ -1,17 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Criando formmularios</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Teste de formularios</h1>
     <form action="cadastro.php" method="get">
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="Sexo" id="masculino" value="M"> <label for="masculino">Masculino</label>
+            <input type="radio" name="Sexo" id="feminino" value="F"> <label for="feminino">Feminino</label>
+        </fieldset>
+        
+      <fieldset>
+        <legend>Esportes favoritos</legend>
+        <input type="checkbox" name="esporte-ginastica" id="iesporte-ginastica"/>
+        <label for="iesporte-ginastica">Ginastica</label> <br />
+        
+        <input type="checkbox" name="esporte-basquete" id="iesporte-basquete" />
+        <label for="iesporte-basquete">Basquete</label> <br />
+
+        <input type="checkbox" name="esporte-natacao" id="iesporte-natacao" />
+        <label for="iesporte-natacao">Natação</label> <br />
+
+        <input type="checkbox" name="esporte-futebol" id="iesporte-futebol" checked/>
+        <label for="iesporte-futebol">Futebol</label> <br />
+        
+        <input type="checkbox" name="esporte-volei" id="iesporte-volei" />
+        <label for="iesporte-volei">Volei</label>
+      </fieldset>
+
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
     </form>
-</body>
+  </body>
 </html>
