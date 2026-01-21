@@ -1,0 +1,83 @@
+/* Todas as demais midias*/
+
+/*Impressão*/
+@media print {
+  body {
+    background-image: url(../imagens/back-print.jpg); /* Nâo imprime background*/
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  main{
+    border: 2px solid black;
+  }
+
+  main h1{
+    text-shadow: none;
+    color: black;
+  }
+
+  #print {
+    display: block;
+  }
+
+  #pc,
+  #tv,
+  #celular,
+  #tablet {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-image: url(../imagens/back-tablet.jpg);
+  }
+
+  #tablet {
+    display: block;
+  }
+
+  #tv,
+  #pc,
+  #print,
+  #celular {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body {
+    background-image: url(../imagens/back-pc.jpg);
+  }
+
+  #pc {
+    display: block;
+  }
+
+  #tableet,
+  #tv,
+  #celular,
+  #print {
+    display: none;
+  }
+}
+
+/* TV */
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(../imagens/back-tv.jpg);
+  }
+
+  #tv {
+    display: block;
+  }
+
+  #celular,
+  #pc,
+  #tablet,
+  #print {
+    display: none;
+  }
+}
