@@ -9,7 +9,18 @@
 
 /* Celular */
 @media screen and (max-width: 600px){
+    #burgao{
+        display: inline;
+        font-size: 2em;
+        color: white;
+    }
+
+    #burgao:hover{
+        cursor: pointer;
+    }
+    
     nav{
+        display: none;
         text-align: center;
         flex-direction: column;
     }

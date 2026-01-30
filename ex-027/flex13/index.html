@@ -6,11 +6,18 @@
     <title>Menu Flexbox</title>
     <link rel="stylesheet" href="estilos/style.css" />
     <link rel="stylesheet" href="estilos/medias.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body onresize="mudouTamanho()">
     <header>
       <h1>Meu site</h1>
-      <nav>
+      <span id="burgao" class="material-symbols-outlined" onclick="clickMenu()"
+        >menu</span
+      >
+      <nav id="itensMenu">
         <a href="#">Inicio</a>
         <a href="#">Noticias</a>
         <a href="#">Saiba mais</a>
@@ -38,5 +45,22 @@
         </p>
       </article>
     </main>
+    <script>
+      function mudouTamanho() {
+        if (window.innerWidth >= 600) {
+          itensMenu.style.display = "flex";
+        } else {
+          itensMenu.style.display = "none";
+        }
+      }
+
+      function clickMenu() {
+        if (itensMenu.style.display == "flex") {
+          itensMenu.style.display = "none";
+        } else {
+          itensMenu.style.display = "flex";
+        }
+      }
+    </script>
   </body>
 </html>

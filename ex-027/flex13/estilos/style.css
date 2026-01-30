@@ -23,6 +23,10 @@ header > h1 {
   text-shadow: 2px 2px 2px #00000080;
 }
 
+#burgao{
+  display: none;
+}
+
 nav {
   display: flex;
   padding-top: 15px;
