@@ -7,9 +7,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   width: 100vw;
   height: 100vh;
+  text-align: center;
+
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 2fr 1fr 10fr 1fr;
+  grid-template-columns: 1fr 150px;
+  grid-template-rows: 80px 40px 1fr 40px;
 }
 
 header {
@@ -18,35 +20,26 @@ header {
   grid-column: 1 / -1;
 }
 
-menu {
+nav {
   background-color: lightgray;
   grid-row: 2 / 3;
   grid-column: 1 / -1;
 }
 
 main {
+  background-color: rgb(215, 250, 233);
   grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+aside {
+  background-color: bisque;
+  grid-row: 3 / 4;
+  grid-column: 2 / -1;
+}
+
+footer {
+  background-color: cadetblue;
+  grid-row: 4 / -1;
   grid-column: 1 / -1;
-
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto;
-}
-
-article{
-    background-color: aquamarine;
-    grid-row: 1 / -1;
-    grid-column: 1 / 2;
-}
-
-aside{
-    background-color: bisque;
-    grid-row: 1 / -1;
-    grid-column: 2 / -1;
-}
-
-footer{
-    background-color: cadetblue;
-    grid-row: 4 / -1;
-    grid-column: 1 / -1;
 }
